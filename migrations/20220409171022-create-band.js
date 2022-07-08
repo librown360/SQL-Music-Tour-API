@@ -26,6 +26,7 @@ module.exports = {
       }
     })
   },
+  // migration file 20220409171022-create-band.js
   down: async (queryInterface, Sequelize) => {
     await queryInterface.dropTable('bands')
   }
