@@ -13,7 +13,7 @@ module.exports = {
         allowNull: false,
       },
       date: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: false,
       },
       start_time: {
@@ -26,6 +26,7 @@ module.exports = {
       }
     })
   },
+  // MIGRATE FILE NAME: 20220409224709-create-event.js
   down: async (queryInterface, Sequelize) => {
     await queryInterface.dropTable('events');
   }
